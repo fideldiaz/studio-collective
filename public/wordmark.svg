@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" fill="none" role="img" aria-labelledby="scTitle scDesc">
+  <title id="scTitle">Studio Collective</title>
+  <desc id="scDesc">Studio Collective wordmark with tagline Turn up your creativity</desc>
+  <style>
+    .wm {
+      font-family: "Fraunces", "Times New Roman", Georgia, serif;
+      font-weight: 500;
+      font-size: 72px;
+      fill: #f0f4f2;
+    }
+    .tg {
+      font-family: "Outfit", system-ui, sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 0.32em;
+      fill: #f0f4f2;
+      opacity: 0.78;
+    }
+  </style>
+  <text class="wm" x="320" y="96" text-anchor="middle">Studio</text>
+  <text class="wm" x="320" y="176" text-anchor="middle">Collective</text>
+  <text class="tg" x="320" y="232" text-anchor="middle">TURN UP YOUR CREATIVITY</text>
+</svg>

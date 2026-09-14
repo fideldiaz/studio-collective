@@ -1,0 +1,17 @@
+.next/
+node_modules
+out
+.DS_Store
+*.log
+.env*.local
+.vercel
+_extract
+# Local-only / not for public site repo
+*.ai
+Artboard*.png
+LOGO.png
+brand/
+social/
+social-soft-launch-drafts.md
+first-lane-runbook.md
+scripts/

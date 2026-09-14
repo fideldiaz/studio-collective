@@ -1,0 +1,44 @@
+.wrap {
+  text-align: center;
+}
+
+.brand {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-optical-sizing: auto;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: var(--mist);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.02em;
+}
+
+.tagline {
+  margin: 1.35rem 0 0;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: var(--tracking-tagline);
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--mist) 78%, transparent);
+}
+
+.hero .brand {
+  font-size: clamp(3.2rem, 11vw, 6.75rem);
+}
+
+.md .brand {
+  font-size: clamp(2.2rem, 6vw, 3.5rem);
+}
+
+.sm .brand {
+  font-size: 1.65rem;
+}
+
+.sm .tagline {
+  margin-top: 0.75rem;
+  font-size: 0.62rem;
+}

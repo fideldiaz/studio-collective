@@ -1,0 +1,51 @@
+:root {
+  --ink: #0b0d0c;
+  --forest: #1b221e;
+  --mist: #f0f4f2;
+  --gold: #ffb72c;
+  --amber: #dfaf45;
+  --electric: #5e54ff;
+  --indigo: #4447ad;
+  --slate: #384255;
+  --text: var(--mist);
+  --text-muted: color-mix(in srgb, var(--mist) 62%, transparent);
+  --font-display: var(--font-fraunces), "Times New Roman", serif;
+  --font-sans: var(--font-outfit), system-ui, sans-serif;
+  --tracking-tagline: 0.28em;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--ink);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--electric) 55%, transparent);
+  color: var(--mist);
+}

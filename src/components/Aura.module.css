@@ -1,0 +1,128 @@
+.aura {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--ink);
+}
+
+.glowWarm,
+.glowCool,
+.glowCenter {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  will-change: transform;
+}
+
+.glowWarm {
+  width: 70vmax;
+  height: 55vmax;
+  left: -18%;
+  bottom: -28%;
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--gold) 85%, white) 0%,
+    color-mix(in srgb, var(--amber) 70%, transparent) 38%,
+    transparent 70%
+  );
+  opacity: 0.9;
+}
+
+.glowCool {
+  width: 65vmax;
+  height: 55vmax;
+  right: -20%;
+  bottom: -22%;
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--electric) 90%, white) 0%,
+    color-mix(in srgb, var(--indigo) 75%, transparent) 42%,
+    transparent 72%
+  );
+  opacity: 0.85;
+}
+
+.glowCenter {
+  width: 50vmax;
+  height: 40vmax;
+  left: 50%;
+  bottom: -8%;
+  transform: translateX(-50%);
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--mist) 78%, white) 0%,
+    color-mix(in srgb, var(--mist) 25%, transparent) 45%,
+    transparent 70%
+  );
+  opacity: 0.55;
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 90% 70% at 50% 20%, transparent 0%, transparent 40%, color-mix(in srgb, var(--ink) 55%, transparent) 100%),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--forest) 75%, transparent) 0%,
+      transparent 38%,
+      color-mix(in srgb, var(--ink) 35%, transparent) 100%
+    );
+}
+
+.grain {
+  position: absolute;
+  inset: -20%;
+  opacity: 0.28;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.9'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+.animated .glowWarm {
+  animation: driftWarm 18s ease-in-out infinite alternate;
+}
+
+.animated .glowCool {
+  animation: driftCool 22s ease-in-out infinite alternate;
+}
+
+.animated .glowCenter {
+  animation: driftCenter 16s ease-in-out infinite alternate;
+}
+
+@keyframes driftWarm {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    transform: translate(4%, -3%) scale(1.06);
+  }
+}
+
+@keyframes driftCool {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    transform: translate(-5%, -2%) scale(1.08);
+  }
+}
+
+@keyframes driftCenter {
+  from {
+    transform: translateX(-50%) translateY(0) scale(1);
+  }
+  to {
+    transform: translateX(-48%) translateY(-4%) scale(1.05);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated .glowWarm,
+  .animated .glowCool,
+  .animated .glowCenter {
+    animation: none;
+  }
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" fill="none" role="img" aria-label="Studio Collective">
+  <style>
+    .wm {
+      font-family: "Fraunces", "Times New Roman", Georgia, serif;
+      font-weight: 500;
+      font-size: 72px;
+      fill: #f0f4f2;
+    }
+  </style>
+  <text class="wm" x="320" y="86" text-anchor="middle">Studio</text>
+  <text class="wm" x="320" y="166" text-anchor="middle">Collective</text>
+</svg>
