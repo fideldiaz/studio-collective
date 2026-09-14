@@ -22,7 +22,7 @@ export default function HomePage() {
         <div className={styles.heroContent}>
           <Wordmark />
           <p className={`${styles.lede} ${styles.fadeUp}`}>
-            Web and product engineering for ambitious brands.
+            Native apps and creative tools that keep focus intact.
           </p>
           <div className={`${styles.ctaRow} ${styles.fadeUpDelay}`}>
             <a className={styles.ctaPrimary} href="#work">
@@ -58,9 +58,9 @@ export default function HomePage() {
           <p className={styles.eyebrow}>Approach</p>
           <h2 className={styles.heading}>Small studio. Serious craft.</h2>
           <p className={styles.bodyCopy}>
-            We design and build digital products that hold up - visually and
-            technically. Clear collaboration, calm interfaces, and engineering
-            that respects the brand.
+            We build native apps and creative tools that keep focus intact —
+            for Mac, iPhone, iPad, and sound. Clear choices, calm interfaces,
+            and engineering that respects attention.
           </p>
         </div>
       </section>
@@ -69,7 +69,7 @@ export default function HomePage() {
         <Aura animated={false} />
         <div className={styles.contactInner}>
           <p className={styles.eyebrow}>Contact</p>
-          <h2 className={styles.heading}>Start a project.</h2>
+          <h2 className={styles.heading}>Get in touch.</h2>
           <a className={styles.email} href={`mailto:${site.email}`}>
             {site.email}
           </a>
