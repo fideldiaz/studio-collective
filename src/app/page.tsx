@@ -43,8 +43,11 @@ export default function HomePage() {
             {site.work.map((item) => (
               <li key={item.title} className={styles.workItem}>
                 <div className={styles.workMeta}>
-                  <h3>{item.title}</h3>
-                  <span>{item.role}</span>
+                  <div className={styles.workTitleRow}>
+                    <h3>{item.title}</h3>
+                    <span className={styles.comingSoon}>{item.status}</span>
+                  </div>
+                  <span className={styles.workRole}>{item.role}</span>
                 </div>
                 <p>{item.summary}</p>
               </li>

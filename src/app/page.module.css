@@ -192,6 +192,13 @@
   gap: 0.5rem 1.25rem;
 }
 
+.workTitleRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem 0.85rem;
+}
+
 .workMeta h3 {
   margin: 0;
   font-family: var(--font-display);
@@ -199,7 +206,20 @@
   font-weight: 500;
 }
 
-.workMeta span {
+.comingSoon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.28rem 0.65rem;
+  border: 1px solid color-mix(in srgb, var(--mist) 28%, transparent);
+  border-radius: 999px;
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--mist) 78%, var(--gold));
+  background: color-mix(in srgb, var(--mist) 6%, transparent);
+}
+
+.workRole {
   font-size: 0.78rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
