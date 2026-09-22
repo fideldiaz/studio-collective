@@ -36,6 +36,14 @@ export const site = {
         "SetFlow is a native iOS and iPadOS app for songwriters and performing musicians. It combines smart chord composition, a searchable chord library with custom voicings, and stage-ready setlists (flows) with swipe navigation. On stage it includes a guitar tuner, a BPM metronome, and lyric auto-scroll tied to the song's tempo — so writing, rehearsal, and live performance stay in one continuous flow.",
     },
     {
+      title: "Pampa",
+      slug: "pampa",
+      role: "Native iOS, macOS & watchOS app",
+      status: "Coming soon",
+      summary:
+        "Pampa is a native care tracker for iPhone, iPad, Mac, and Apple Watch. It follows wellness, movement, self-care, growth, and health on their own cadences — daily, weekly, or occasional — and asks when you last showed up, not whether a streak survived.",
+    },
+    {
       title: "After Dark",
       slug: "after-dark",
       role: "Audio instrument",

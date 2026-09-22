@@ -61,9 +61,10 @@ export default function HomePage() {
           <p className={styles.eyebrow}>Approach</p>
           <h2 className={styles.heading}>Small studio. Serious craft.</h2>
           <p className={styles.bodyCopy}>
-            We build native apps and creative tools that keep focus intact —
-            for Mac, iPhone, iPad, and sound. Clear choices, calm interfaces,
-            and engineering that respects attention.
+            Studio Collective makes native apps and creative tools for Mac,
+            iPhone, iPad, and sound. The work is quiet on purpose: clear
+            choices, calm interfaces, and engineering that respects attention.
+            Built with care. Shipped with clarity.
           </p>
         </div>
       </section>
