@@ -44,7 +44,15 @@ export default function HomePage() {
               <li key={item.title} className={styles.workItem}>
                 <div className={styles.workMeta}>
                   <div className={styles.workTitleRow}>
-                    <h3>{item.title}</h3>
+                    <h3>
+                      {"href" in item && item.href ? (
+                        <a className={styles.workLink} href={item.href}>
+                          {item.title}
+                        </a>
+                      ) : (
+                        item.title
+                      )}
+                    </h3>
                     <span className={styles.comingSoon}>{item.status}</span>
                   </div>
                   <span className={styles.workRole}>{item.role}</span>

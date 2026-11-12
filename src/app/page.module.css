@@ -327,3 +327,17 @@
     animation: none;
   }
 }
+
+.workLink {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+  transition: text-decoration-color 0.2s ease;
+}
+
+.workLink:hover,
+.workLink:focus-visible {
+  text-decoration-color: currentColor;
+}

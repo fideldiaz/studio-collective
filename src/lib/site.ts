@@ -30,6 +30,7 @@ export const site = {
     {
       title: "SetFlow",
       slug: "setflow",
+      href: "/setflow/",
       role: "Native iOS & iPadOS app",
       status: "Coming soon",
       summary:
