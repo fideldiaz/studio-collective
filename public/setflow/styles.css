@@ -502,8 +502,11 @@ a:hover {
 
 .shot-card img {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 9 / 19.5;
+  max-height: 560px;
   object-fit: cover;
+  object-position: top center;
+  background: #1a1224;
 }
 
 .shot-card h3 {
